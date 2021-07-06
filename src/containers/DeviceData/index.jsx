@@ -16,7 +16,8 @@ const DeviceData = () => {
         <Container width={"auto"} height={"100%"} paddingLeft={"80px"}>
             <ChartHolder width={"83.8vw"} height={"60%"} title={"Bonfire Economy Dashboard"}>
                 <div style={{paddingLeft: '30px'}}>
-                    <MeasureLabel label={"Gasto Total"} dataSourceUrl = {BuildingAPIURL}/>
+                    <MeasureLabel label={"Gasto Total"} dataSourceUrl = {BuildingAPIURL} dataName={"Wattage"}/>
+                    <MeasureLabel label={"Limite Mensal"} dataSourceUrl = {BuildingAPIURL} dataName={"Consumption_limit"} CurrentDate={false}/>
                 </div>
             </ChartHolder>
             
